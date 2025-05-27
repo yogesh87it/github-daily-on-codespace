@@ -1,6 +1,6 @@
 {
   "name": "My Codespace",
-  "image": "mcr.microsoft.com/vscode/devcontainers/node:22",
+  "image": "mcr.microsoft.com/devcontainers/node:22",
 
   "customizations": {
     "vscode": {
