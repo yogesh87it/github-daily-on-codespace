@@ -5,9 +5,23 @@ street = "24 Private";
 
 console.table([dateOfBirth,country,city,street]);
 
-dateOfBirth = "10-12-2003";//TypeError
+//dateOfBirth = "10-12-2003";//TypeError
 country = "Austria";
 city="New Yark";
 street = "charlie 56";
 
 console.table([dateOfBirth,country,city,street]);
+
+//var does not respect scope except function scope
+
+const  myFriend = "Bob";
+if (myFriend==="Bob"){
+    var fruit = "apple";
+    let veg = "cabbage";
+    console.log(fruit,veg); //both printed
+}
+    console.log(fruit,veg); // Reference Error for veg- not defined. 
+    //fruit is printed as var does not respect the scope and available outside the scope
+    //let and const respect the scope and will not be available outside it giving error;
+
+
