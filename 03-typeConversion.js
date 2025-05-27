@@ -12,7 +12,7 @@ console.log(newRollNo2); //=> NaN
 console.log(typeof NaN); //=> Number
 /*care must be taken when converting to number as wrong data conversion will give NaN, and code 
 will have logical errors.
-*/
+*/ 
 
 //null to number give 0
 let turtleNo = null;
@@ -40,5 +40,20 @@ let catName = "tom";
 let catNameNo = Number(catName);
 console.log(catNameNo);//=>NaN
 
-//save to main
+//Boolean Conversion
+//number to boolean
+let isBoolean = 1;
+let newBoolean = Boolean(isBoolean);
+console.log(newBoolean);// =>true, if 0 => false
 
+//string to boolean
+let product = "";
+let product2 = "tv";
+let newProduct = Boolean(product);
+let newProduct2 = Boolean(product2);
+console.log(newProduct,newProduct2); //=> false, true
+// empty string gives false, else true
+
+console.log(Boolean(BigInt));
+
+//check conversion tables on net or quick check in console.
