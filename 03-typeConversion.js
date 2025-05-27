@@ -39,3 +39,5 @@ console.log(fact1,fact2);// =>0 ,1
 let catName = "tom";
 let catNameNo = Number(catName);
 console.log(catNameNo);//=>NaN
+
+
